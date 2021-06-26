@@ -1,0 +1,399 @@
+/* Mobile First Approach = 425px*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .1s linear;
+    text-decoration: none;
+  }
+  
+  /* Navbar, Logo dan Background */
+  /* Header */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 10%;
+  clear: both;
+  overflow: hidden;
+  margin: auto;
+  background-color: rgb(26, 36, 51);
+}
+
+/* Header ends*/
+/* Navbar */
+.nav {
+  display: none;
+}
+.header .navbar {
+  position: absolute;
+  top: -120%;
+  height: 45%;
+  width: 45%;
+  z-index: 1000;
+  right: 0;
+  text-align: center;
+  padding-top: 15px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #14364d, #13a787);
+}
+
+.header .navbar ul li {
+  margin: 1rem 0;
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.header .navbar ul li a {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  list-style: none;
+  font-family: 'RocknRoll One', sans-serif;
+}
+
+.header .nav-toggle {
+  top: 5.8rem;
+}
+
+.header .fa-bars {
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+  display: block;
+}
+
+ul li a:hover {
+  color: rgb(41, 100, 148);
+  letter-spacing: .1rem;
+}
+
+ul button {
+  padding: 9px 25px;
+  background-color: rgb(16, 113, 192);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #e0e0e0;
+  font-size: 16px;
+  text-decoration: none !important;
+  font-family: 'RocknRoll One', sans-serif;
+}
+
+button:hover {
+  background-color: rgb(15, 25, 83, 0.5);
+  letter-spacing: .1rem;
+}
+
+/* Navbar ends*/
+/* Logo */
+header h3 {
+  color: rgb(255, 255, 255);
+  font-family: 'Stick', sans-serif;
+  font-size: 25px;
+  margin-right: auto;
+}
+
+/* Logo ends*/
+  
+  /* Akhir, Navbar, Logo dan Background*/
+  
+  /* About Me  */
+  .background{
+    width: 100%;
+    background-color: #242424;
+    height: 260vh;
+  }
+  .wrapper{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 95%;
+    height: 93vh;
+    box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+    font-family: 'RocknRoll One', sans-serif;
+  }
+  
+  .wrapper .left{
+    width: 98.5%;
+    background: linear-gradient(to right,#14364d,#13a787);
+    padding:20px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    flex-flow: column;
+    margin-top: -66rem;
+  }
+  
+  .wrapper .left img{
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 94%;
+  }
+  
+  .wrapper .left h4 p{
+    margin-bottom: 2px;
+    font-size: 1.4rem;
+  }
+
+  .wrapper .right{
+    width: 98%;
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 5px;
+    margin-top: 2rem;
+  }
+  
+  .wrapper .right .info,
+  .wrapper .right .projects{
+    margin-bottom: 25px;
+  }
+  
+  .wrapper .right .info h3,
+  .wrapper .right .projects h3{
+      margin-bottom: 1.5rem;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #e0e0e0;
+      color: #353c4e;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+  
+  .wrapper .right .info_data,
+  .wrapper .right .projects_data{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .wrapper .right .info_data .data,
+  .wrapper .right .projects_data .data{
+    width: 45%;
+    margin-bottom: 1rem;
+  }
+  
+  .wrapper .right .info_data .data h4,
+  .wrapper .right .projects_data .data h4{
+      color: #353c4e;
+      margin-bottom: 5px;
+  }
+  
+  .wrapper .right .info_data .data p,
+  .wrapper .right .projects_data .data p{
+    font-size: 8px;
+    margin-bottom: 10px;
+    color: #919aa3;
+  }
+  
+  .wrapper .social_media ul{
+    display: flex;
+    float: right;
+  }
+  .story{
+    margin-top: 1rem;
+    color: #727a83;
+    font-size: 13px;
+  }
+  .wrapper .social_media ul li{
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(to right,#14364d,#13a787);
+    margin-right: 10px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 45px;
+    margin-top: -0.8rem;
+    text-decoration: none !important;
+  }
+  
+  .wrapper .social_media ul li a{
+    color :#fff;
+    display: block;
+    font-size: 20px;
+    text-decoration: none !important;
+  }
+   /* About Me ends */
+  
+  /* Footer */
+footer.footer {
+  height: 58vh;
+  background-color: rgb(26, 36, 51);
+  position: relative;
+  margin-top: auto;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 13.1px;
+
+}
+
+footer.footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-left: 5%;
+}
+
+footer.footer .container>div {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 2rem 0.5rem;
+}
+
+footer.footer .container h2 {
+  color: #fff;
+}
+
+footer.footer .newsletter .form-element {
+  background: black;
+  display: inline-block;
+}
+
+footer.footer .newsletter .form-element input {
+  padding: .5rem .7rem;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 10px;
+  width: 74%;
+}
+
+footer.footer .newsletter .form-element span {
+  padding: .5rem .7rem;
+  cursor: pointer;
+}
+
+footer.footer .instagram div>img {
+  display: inline-block;
+  width: 25%;
+  height: 50%;
+  margin: .3rem .4rem;
+}
+
+footer.footer .follow div i {
+  padding: 0 .4rem;
+}
+
+footer.footer .rights {
+  justify-content: center;
+  text-align: center;
+}
+footer.footer .move-up {
+  position: absolute;
+  right: 6%;
+  top: 50%;
+}
+
+footer.footer .move-up span:hover {
+  cursor: pointer;
+}
+
+/* Footer ends*/
+
+/*  Responsive Website*/
+/* media queries  */
+@media screen and (min-width: 1024px) {
+
+  /* Logo */
+  header h3 {
+    font-size: 30px;
+  }
+
+  /* Logo ends */
+
+  /* Navbar */
+  .nav {
+    display: block;
+  }
+
+  nav li a {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    list-style: none;
+    font-family: 'RocknRoll One', sans-serif;
+  }
+
+  nav ul li {
+    display: inline-block;
+    padding: 0px 20px;
+  }
+
+  ul li a:hover {
+    color: rgb(41, 100, 148);
+    letter-spacing: .1rem;
+  }
+
+  .header .fa-bars {
+    display: none;
+  }
+
+  /* Navbar ends*/
+
+
+  /* Footer */
+  footer.footer {
+    height: 9.5%;
+    font-size: 1rem;
+  }
+
+  footer.footer .container {
+    padding-left: 10%;
+  }
+
+  footer.footer .container>div {
+    padding: 2rem 1rem;
+  }
+
+  footer.footer .newsletter .form-element input {
+    font-size: 1rem;
+  }
+
+  /* Footer ends*/
+
+  /* About Me  */
+  .background{
+    height: 110vh;
+  }
+  .wrapper{
+    position: absolute;
+    margin-top: -29%;
+    display: flex;
+    height: 93vh;
+  }
+  
+  .wrapper .left{
+    width: 35%;
+    padding: 30px 25px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-top: 2rem;
+  }
+  
+  .wrapper .left img{
+    width: 90%;
+  }
+  
+  .wrapper .left h4{
+    margin-bottom: 3px;
+    margin-top: -1rem;
+    font-size: 1.5rem;
+  }
+  .wrapper .left p{
+    margin-bottom: 3px;
+    font-size: 1.3rem;
+  }
+  .wrapper .right{
+    width: 65%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .wrapper .right .info_data .data p,
+  .wrapper .right .projects_data .data p{
+    font-size: 13px;
+  }
+  .story{
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  .wrapper .social_media ul li a{
+    font-size: 18px;
+  }
+   /* About Me ends */
+  }
+

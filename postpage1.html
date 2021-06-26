@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YOUR AI</title>
+  <link rel="icon" href="images.png">
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="postpage1.css">
+  <!-- Fonts Google -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <!-- font awesome file link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+  <!-- Heading -->
+
+  <header class="header">
+    <img src="icon.png" alt="logo">
+    <h3>YOUR AI</h3>
+    <div class="fas fa-bars"></div>
+
+    <!-- Navbar -->
+    <nav class="nav">
+      <ul>
+          <li> <a href="index.html">HOME</a> </li>
+          <li> <a href="about.html">ABOUT</a> </li>
+          <li><button class="show-login-btn">SIGN IN</button></li>
+      </ul>
+  </nav>
+    <nav class="navbar">
+      <ul>
+        <li> <a href="index.html">HOME</a> </li>
+        <li> <a href="#">ABOUT</a> </li>
+        <li><button class="show-login-btn">SIGN IN</button></li>
+      </ul>
+    </nav>
+    <!-- Akhir Navbar -->
+
+  </header>
+  <!-- Akhir Heading -->
+
+  <!-- Section Article and sidebar-->
+  <section class="card">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="section topics">
+        <h2 class="section-title">KEYWORDS</h2>
+        <ul>
+          <li><a href="#">Medical Robot-</a></li>
+          <li><a href="#"> Healthcare-</a></li>
+          <li><a href="#"> 3D Structural-Sensing-</a></li>
+          <li><a href="#"> Simon Fraser University-</a></li>
+          <li><a href="#"> Woo Soo Kim-</a></li>
+          <li><a href="#"> School of Mechatronic Systems Engineering-</a></li>
+          <li><a href="#"> Workers and Patients-</a></li>
+          <li><a href="#"> Human Physiological Signals-</a></li>
+          <li><a href="#"> COVID-19-</a></li>
+          <li><a href="#"> Additive Manufacturing Lab-</a></li>
+          <li><a href="#"> Collaborators</a></li>
+        </ul>
+      </div>
+    </aside>
+    <!-- Sidebar ends -->
+    <!-- Section Article -->
+    <article>
+      <div class="image-data">
+        <div class="background-image image"></div>
+        <div class="publication-detail">
+          <a href="#" class="source"><i class="fas fa-user">Simon Fraser University</i></a><br>
+          <span class="data"><i class="fas fa-calendar-alt"></i>February 27, 2021</span>
+        </div>
+      </div>
+      <div class="post-data">
+        <h1 class="title">Sensing Robot Healthcare Helpers</h1>
+        <p class="preview">Robots that could take on basic healthcare tasks to support the work of doctors and nurses
+          may be the way of the future. Who knows, maybe a medical robot can prescribe your medicine someday? That's
+          the idea behind 3D structural-sensing robots being developed and tested at Simon Fraser University by Woo
+          Soo Kim, associate professor in the School of Mechatronic Systems Engineering.<br><br>
+
+          "The recent pandemic demonstrates the need to minimize human-to-human interaction between healthcare workers
+          and patients," says Kim, who authored two recent papers on the subject -- a perspective on the technology
+          and a demonstration of a robots' usefulness in healthcare. "There's an opportunity for sensing robots to
+          measure essential healthcare information on behalf of care providers in the future."<br><br>
+
+          Kim's research team programmed two robots, a humanoid figure and a robotic arm, to measure human
+          physiological signals, working from Kim's Additive Manufacturing Lab located in SFU Surrey's new engineering
+          building. The robotic arm, created using Kim's 3D printed origami structures, contains biomedical electrodes
+          on the tip of each finger. When the hand touches a person, it detects physiological signals, including those
+          from an electrocardiogram (which monitors heartbeat), respiration rate, electromyogram (monitoring
+          electrical signals from muscle movements) and temperature.<br><br>
+
+          The humanoid robot can also monitor oxygen levels, which could be used to monitor the condition of those who
+          develop severe COVID-19. The data can be viewed in real-time on the robot's monitor or sent directly to the
+          healthcare provider.
+
+          Kim plans further development and testing of the robot together with healthcare collaborators. At this
+          stage, the robots are capable of passively gathering patient information. But within the next decade, he
+          says it's conceivable that healthcare robots fitted with artificial intelligence could take a more active
+          role, interacting with the patient, processing the data they have collected and even prescribing medication.
+        </p>
+      </div>
+    </article>
+    <!-- Section Article ends -->
+
+    <!-- Comment Section -->
+    <section class="form">
+      <h5>Comment Section</h5>
+      Name :  <input type="text" id="name"><br><br>
+      Date :  <input type="date" id="date"><br><br>
+      Comment : <br><textarea rows="5" col="30" id="bodyText"></textarea><br><br>
+      <input type="button" id="addComment" value="Add Comment">
+    </section>
+
+    <div id="container">
+
+    </div>
+  <!-- Comment Section ends-->
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+        <h2>About Me</h2>
+        <p>Saya adalah seorang web developer pemula yang masih dalam tahap belajar. Sekarang sedang menempuh
+          pendidikan
+          di Salt Academy.</p>
+      </div>
+      <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+        <h2>Newsletter</h2>
+        <p>Stay update with our latest</p>
+        <div class="form-element">
+          <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
+        </div>
+      </div>
+      <div class="follow" data-aos="fade-left" data-aos-delay="200">
+        <h2>Follow Me</h2>
+        <p>Let us be Social</p>
+        <div>
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+    <div class="rights flex-row">
+      <h4 class="text-gray">
+        Copyright ©2021-Nabila Khaerunnisa. All Right Reserved.
+      </h4>
+    </div>
+    <div class="move-up">
+      <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+    </div>
+  </footer>
+  <!-- Footer ends -->
+
+  <!-- SIGN IN -->
+  <div class="login-box">
+    <div class="hide-login-btn"><i class="fas fa-times"></i></div>
+
+    <form action="index.html">
+<img src="young.jpg">
+<h2 class="title">SIGN IN</h2>
+       <div class="input-div one">
+          <div class="i">
+              <i class="fas fa-user"></i>
+          </div>
+          <div class="div">
+              <h5>Username</h5>
+              <input type="text" class="input">
+          </div>
+       </div>
+       <div class="input-div pass">
+          <div class="i"> 
+             <i class="fas fa-lock"></i>
+          </div>
+          <div class="div">
+             <h5>Password</h5>
+             <input type="password" class="input">
+         </div>
+      </div>
+      <a href="#">Forgot Password?</a>
+      <input type="submit" class="btn" value="Login">
+    </form>
+  </div>
+<!-- SIGN IN ends-->
+
+  <!-- jquery file link  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+  <!-- custom js file link  -->
+  <script src="pg1.js"></script>
+</body>
+
+</html>
